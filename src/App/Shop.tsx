@@ -91,7 +91,7 @@ const Content = (props: Props) => {
             <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
               <div className="small">
                 <ul>
-                  <li><div>O/O or FSM</div><div>{shop['O/O']}</div></li>
+                  <li><div>O/O or FSM</div><div>{shop['法人']}</div></li>
                   <li><div>紹介文</div><div>{shop['紹介文']}</div></li>
                 </ul>
               </div>
