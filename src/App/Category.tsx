@@ -20,9 +20,9 @@ const Content = (props: Props) => {
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
 
-      if (categories.indexOf(shop['O/O']) === -1) {
+      if (categories.indexOf(shop['法人']) === -1) {
 
-        categories.push(shop['O/O'])
+        categories.push(shop['法人'])
       }
 
     }
