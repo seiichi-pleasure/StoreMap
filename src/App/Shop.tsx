@@ -89,10 +89,6 @@ const Content = (props: Props) => {
             ></div>
 
             <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
-//              <div className="small">
-//                <pre>O/O or FSM&#009;：&#009;{shop['カテゴリ']}</pre>
-//                <pre>担当BC&#009;：&#009;{shop['担当BC']}</pre>
-//              </div>
 
           </>
           :
