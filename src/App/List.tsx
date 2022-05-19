@@ -77,7 +77,7 @@ const Content = (props: Props) => {
 
   return (
     <div id="shop-list" className="shop-list">
-      {queryCategory && <div className="shop-list-category">{`カテゴリ：「${queryCategory}」`}</div>}
+      {queryCategory && <div className="shop-list-category">{`O/O：「${queryCategory}」`}</div>}
 
       <InfiniteScroll
         dataLength={list.length}
