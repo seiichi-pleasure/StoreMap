@@ -26,7 +26,7 @@ const Content = (props: Props) => {
 
     if (queryCategory) {
       data = props.data.filter((shop) => {
-        return shop['O/O'] === queryCategory
+        return shop['法人'] === queryCategory
       })
     }
 
