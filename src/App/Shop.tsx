@@ -88,7 +88,17 @@ const Content = (props: Props) => {
               data-navigation-control="off"
             ></div>
 
-            <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>スポットまでの道順</a></p>
+            <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
+              <div className="small">
+                <ul>
+                  <li><div className="text">O/O or FSM</div><div>shop['O/O']</div></li>
+                  <li><div className="text">紹介文</div><div>shop['紹介文']</div></li>
+                  <li><div className="text">O/O or FSM</div><div>shop['O/O']</div></li>
+                  <li><div className="text">紹介文</div><div>shop['紹介文']</div></li>
+                  <li><div className="text">O/O or FSM</div><div>shop['O/O']</div></li>
+                  <li><div className="text">紹介文</div><div>shop['紹介文']</div></li>
+                </ul>
+              </div>
 
           </>
           :
