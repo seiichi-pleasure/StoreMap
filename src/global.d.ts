@@ -8,6 +8,7 @@ declare namespace Iemeshi {
     'スポット名': string;
     'カテゴリ': string;
     '紹介文': string;
+    '担当BC': string;
     '画像': string;
     'URL': string;
     'Instagram': string;
