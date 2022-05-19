@@ -15,7 +15,7 @@ const Content = (props: Props) => {
   }
 
   const distanceTipText = makeDistanceLabelText(props.data.distance)
-  const category = props.data['カテゴリ']
+  const category = props.data['O/O']
   const image = props.data['画像']
 
 
