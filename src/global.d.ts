@@ -6,7 +6,7 @@ declare namespace Iemeshi {
     '緯度': string;
     '経度': string;
     'スポット名': string;
-    '法人': string;
+    'カテゴリ': string;
     '紹介文': string;
     '画像': string;
     'URL': string;
