@@ -26,7 +26,7 @@ const Content = (props: Props) => {
 
     if (queryCategory) {
       data = props.data.filter((shop) => {
-        return shop['法人'] === queryCategory
+        return shop['カテゴリ'] === queryCategory
       })
     }
 
@@ -77,7 +77,7 @@ const Content = (props: Props) => {
 
   return (
     <div id="shop-list" className="shop-list">
-      {queryCategory && <div className="shop-list-category">{`O/O：「${queryCategory}」`}</div>}
+      {queryCategory && <div className="shop-list-category">{`カテゴリ：「${queryCategory}」`}</div>}
 
       <InfiniteScroll
         dataLength={list.length}
