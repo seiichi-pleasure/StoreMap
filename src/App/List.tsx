@@ -42,34 +42,6 @@ const Content = (props: Props) => {
     }
   }, [props.data, queryCategory, page])
 
-  React.useEffect(() => {
-
-    let data = props.data;
-
-    if (queryStore) {
-      data = props.data.filter((shop) => {
-        return shop['スポット名'] === queryStore
-      })
-    }
-
-    let isMounted = true
-    // prevent memory leak
-    if (isMounted) {
-      setList(data.slice(0, page))
-      setData(data)
-    }
-
-    return () => {
-      isMounted = false
-    }
-  }, [props.data, queryStore, page])
-  
-  const popupHandler = (shop: Iemeshi.ShopData) => {
-    if (shop) {
-      setShop(shop)
-    }
-  }
-
   const closeHandler = () => {
     setShop(undefined)
   }
