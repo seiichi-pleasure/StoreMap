@@ -35,10 +35,6 @@ const Content = (props: Props) => {
               <Link to={`/list?category=${category}`}>
                 <span className="category">{category}</span>
               </Link>
-              !isStorePage &&
-              <Link to={`/list?store=${store}`}>
-                <span className="store">{store}</span>
-              </Link>
             }
           </span>
           <span className="nowrap">{distanceTipText && <span className="distance">現在位置から {distanceTipText}</span>}</span>
