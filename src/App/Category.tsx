@@ -12,10 +12,12 @@ const Content = (props: Props) => {
   const navigate = useNavigate();
 
   const [categoryList, setCategoryList] = React.useState<string[]>([]);
+  const [storeList, setStoreList] = React.useState<string[]>([]);
 
   React.useEffect(() => {
 
     let categories: string[] = []
+    let shops: string[] = []
 
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
@@ -24,10 +26,15 @@ const Content = (props: Props) => {
 
         categories.push(shop['カテゴリ'])
       }
+      if (shops.indexOf(shop['スポット名']) === -1) {
+
+        shops.push(shop['スポット名'])
+      }
 
     }
 
     setCategoryList(categories)
+    setStoreList(shops)
 
   }, [props.data])
 
