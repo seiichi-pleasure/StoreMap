@@ -7,6 +7,7 @@ type Props = {
   data: Iemeshi.ShopData;
   popupHandler: Function;
   queryCategory: string | null;
+  queryStore: string | null;
 };
 
 const Content = (props: Props) => {
@@ -16,10 +17,12 @@ const Content = (props: Props) => {
 
   const distanceTipText = makeDistanceLabelText(props.data.distance)
   const category = props.data['カテゴリ']
+  const store = props.data['スポット名']
   const image = props.data['画像']
 
 
   const isCategoryPage = props.queryCategory ? true :false
+  const isStorePage = props.queryStore ? true :false
 
   return (
     <>
@@ -31,6 +34,12 @@ const Content = (props: Props) => {
               !isCategoryPage &&
               <Link to={`/list?category=${category}`}>
                 <span className="category">{category}</span>
+              </Link>
+            }
+            {
+              !isStorePage &&
+              <Link to={`/list?store=${store}`}>
+                <span className="category">{store}</span>
               </Link>
             }
           </span>
