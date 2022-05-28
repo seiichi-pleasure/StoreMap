@@ -17,7 +17,7 @@ const Content = (props: Props) => {
   React.useEffect(() => {
 
     let categories: string[] = []
-    let shops: string[] = []
+    let stores: string[] = []
 
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
@@ -26,15 +26,15 @@ const Content = (props: Props) => {
 
         categories.push(shop['カテゴリ'])
       }
-      if (shops.indexOf(shop['スポット名']) === -1) {
+      if (stores.indexOf(shop['スポット名']) === -1) {
 
-        shops.push(shop['スポット名'])
+        stores.push(shop['スポット名'])
       }
 
     }
 
     setCategoryList(categories)
-    setStoreList(shops)
+    setStoreList(stores)
 
   }, [props.data])
 
