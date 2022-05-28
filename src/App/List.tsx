@@ -47,7 +47,7 @@ const Content = (props: Props) => {
     let data = props.data;
 
     if (queryStore) {
-      storedata = props.data.filter((shop) => {
+      data = props.data.filter((shop) => {
         return shop['スポット名'] === queryStore
       })
     }
@@ -55,8 +55,8 @@ const Content = (props: Props) => {
     let isMounted = true
     // prevent memory leak
     if (isMounted) {
-      storelist(data.slice(0, page))
-      setStoreData(data)
+      setList(data.slice(0, page))
+      setData(data)
     }
 
     return () => {
