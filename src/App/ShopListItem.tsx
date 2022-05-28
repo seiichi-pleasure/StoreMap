@@ -38,7 +38,7 @@ const Content = (props: Props) => {
             }
             {
               !isStorePage &&
-              <Link to={`/list?category=${store}`}>
+              <Link to={`/list?store=${store}`}>
                 <span className="category">{store}</span>
               </Link>
             }
