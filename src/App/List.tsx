@@ -42,6 +42,12 @@ const Content = (props: Props) => {
     }
   }, [props.data, queryCategory, page])
 
+  const popupHandler = (shop: Iemeshi.ShopData) => {
+    if (shop) {
+      setShop(shop)
+    }
+  }
+    
   const closeHandler = () => {
     setShop(undefined)
   }
