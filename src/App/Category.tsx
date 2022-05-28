@@ -57,14 +57,14 @@ const Content = (props: Props) => {
             <Select
               onChange={(e) => {
                 if (e) {
-                  navigate(`/list?category=${e.value}`);
+                  navigate(`/list?store=${e.value}`);
                 }
               }}
               options={
-                categoryList.map(category => {
+                categoryList.map(store => {
                   return {
-                    value: category,
-                    label: category
+                    value: store,
+                    label: store
                   }
                 })
               }
