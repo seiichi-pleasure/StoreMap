@@ -68,7 +68,7 @@ const Content = (props: Props) => {
                 }
               }}
               options={
-                categoryList.map(store => {
+                storeList.map(store => {
                   return {
                     value: store,
                     label: store
