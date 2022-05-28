@@ -19,7 +19,6 @@ const Content = (props: Props) => {
 
   const [searchParams] = useSearchParams();
   const queryCategory = searchParams.get('category')
-  const queryStore = searchParams.get('store')
 
   React.useEffect(() => {
 
@@ -119,7 +118,6 @@ const Content = (props: Props) => {
                   data={item}
                   popupHandler={popupHandler}
                   queryCategory={queryCategory}
-                  queryStore={queryStore}
                 />
               </div>)
 
