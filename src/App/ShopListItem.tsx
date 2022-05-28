@@ -21,7 +21,6 @@ const Content = (props: Props) => {
 
 
   const isCategoryPage = props.queryCategory ? true :false
-  const isStorePage = props.queryStore ? true :false
 
   return (
     <>
