@@ -120,6 +120,7 @@ const Content = (props: Props) => {
                   data={item}
                   popupHandler={popupHandler}
                   queryCategory={queryCategory}
+                  queryStore={queryStore}
                 />
               </div>)
 
