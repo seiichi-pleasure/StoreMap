@@ -61,6 +61,8 @@ const Content = (props: Props) => {
                 })
               }
             />
+            <div></div>
+            <label htmlFor="category-select">店舗</label>
             <Select
               onChange={(e) => {
                 if (e) {
