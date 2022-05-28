@@ -7,7 +7,6 @@ type Props = {
   data: Iemeshi.ShopData;
   popupHandler: Function;
   queryCategory: string | null;
-  queryStore: string | null;
 };
 
 const Content = (props: Props) => {
