@@ -54,6 +54,21 @@ const Content = (props: Props) => {
                 })
               }
             />
+            <Select
+              onChange={(e) => {
+                if (e) {
+                  navigate(`/list?category=${e.value}`);
+                }
+              }}
+              options={
+                categoryList.map(category => {
+                  return {
+                    value: category,
+                    label: category
+                  }
+                })
+              }
+            />
           </div>
 
         </div>
