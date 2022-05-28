@@ -14,7 +14,7 @@ const Content = (props: Props) => {
   const [shop, setShop] = React.useState<Iemeshi.ShopData | undefined>()
   const [data, setData] = React.useState<Iemeshi.ShopData[]>(props.data)
   const [list, setList] = React.useState<any[]>([]);
-  const [storedata, setStoreData] = React.useState<Iemeshi.ShopData[]>(props.storedata)
+  const [storedata, setStoreData] = React.useState<Iemeshi.ShopData[]>(props.data)
   const [storelist, setStoreList] = React.useState<any[]>([]);
   const [page, setPage] = React.useState(10);
   const [hasMore, setHasMore] = React.useState(true);
@@ -47,10 +47,10 @@ const Content = (props: Props) => {
 
   React.useEffect(() => {
 
-    let storedata = props.storedata;
+    let storedata = props.data;
 
     if (queryStore) {
-      storedata = props.storedata.filter((shop) => {
+      storedata = props.data.filter((shop) => {
         return shop['スポット名'] === queryStore
       })
     }
@@ -65,7 +65,7 @@ const Content = (props: Props) => {
     return () => {
       isMounted = false
     }
-  }, [props.storedata, queryStore, page])
+  }, [props.data, queryStore, page])
   
   const popupHandler = (shop: Iemeshi.ShopData) => {
     if (shop) {
