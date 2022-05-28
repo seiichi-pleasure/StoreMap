@@ -14,8 +14,6 @@ const Content = (props: Props) => {
   const [shop, setShop] = React.useState<Iemeshi.ShopData | undefined>()
   const [data, setData] = React.useState<Iemeshi.ShopData[]>(props.data)
   const [list, setList] = React.useState<any[]>([]);
-  const [storedata, setStoreData] = React.useState<Iemeshi.ShopData[]>(props.data)
-  const [storelist, setStoreList] = React.useState<any[]>([]);
   const [page, setPage] = React.useState(10);
   const [hasMore, setHasMore] = React.useState(true);
 
@@ -47,7 +45,7 @@ const Content = (props: Props) => {
 
   React.useEffect(() => {
 
-    let storedata = props.data;
+    let data = props.data;
 
     if (queryStore) {
       storedata = props.data.filter((shop) => {
@@ -58,8 +56,8 @@ const Content = (props: Props) => {
     let isMounted = true
     // prevent memory leak
     if (isMounted) {
-      storelist(storedata.slice(0, page))
-      setStoreData(storedata)
+      storelist(data.slice(0, page))
+      setStoreData(data)
     }
 
     return () => {
