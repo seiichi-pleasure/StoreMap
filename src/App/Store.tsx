@@ -19,12 +19,7 @@ const Content = (props: Props) => {
 
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
-
-      if (stores.indexOf(shop['スポット名']) === -1) {
-
-        stores.push(shop['スポット名'])
-      }
-
+      if (stores.indexOf(shop['スポット名']) === -1) stores.push(shop['スポット名']);
     }
 
     setStoreList(stores)
