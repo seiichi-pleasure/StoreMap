@@ -6,6 +6,7 @@ import Home from './App/Home'
 import List from './App/List'
 import AboutUs from './App/AboutUs'
 import Category from './App/Category'
+import Store from './App/Store'
 import Images from './App/Images'
 
 import Tabbar from './App/Tabbar'
