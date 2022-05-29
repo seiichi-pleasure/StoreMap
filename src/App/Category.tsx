@@ -12,29 +12,19 @@ const Content = (props: Props) => {
   const navigate = useNavigate();
 
   const [categoryList, setCategoryList] = React.useState<string[]>([]);
-  const [storeList, setStoreList] = React.useState<string[]>([]);
 
   React.useEffect(() => {
 
     let categories: string[] = []
-    let stores: string[] = []
 
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
 
-      if (categories.indexOf(shop['カテゴリ']) === -1) {
-
-        categories.push(shop['カテゴリ'])
-      }
-      if (stores.indexOf(shop['スポット名']) === -1) {
-
-        stores.push(shop['スポット名'])
-      }
+      if (categories.indexOf(shop['カテゴリ']) === -1) categories.push(shop['カテゴリ']);
 
     }
 
     setCategoryList(categories)
-    setStoreList(stores)
 
   }, [props.data])
 
@@ -57,29 +47,6 @@ const Content = (props: Props) => {
                   return {
                     value: category,
                     label: category
-                  }
-                })
-              }
-            />
-          </div>
-
-        </div>
-      </div>
-      <div className="store">
-        <div className="container">
-          <div className="store-item">
-            <label htmlFor="store-select">店舗</label>
-            <Select
-              onChange={(e) => {
-                if (e) {
-                  navigate(`/list?store=${e.value}`);
-                }
-              }}
-              options={
-                storeList.map(store => {
-                  return {
-                    value: store,
-                    label: store
                   }
                 })
               }
