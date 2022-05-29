@@ -43,7 +43,7 @@ const Content = (props: Props) => {
                 storeList.map(store => {
                   return {
                     value: store,
-                    label: store
+                    label: storeonly
                   }
                 })
               }
