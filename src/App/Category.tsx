@@ -61,7 +61,13 @@ const Content = (props: Props) => {
                 })
               }
             />
-            <div></div>
+          </div>
+
+        </div>
+      </div>
+      <div className="store">
+        <div className="container">
+          <div className="store-item">
             <label htmlFor="store-select">店舗</label>
             <Select
               onChange={(e) => {
