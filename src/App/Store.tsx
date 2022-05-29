@@ -1,7 +1,7 @@
 import React from "react";
 import Select from 'react-select'
 import { useNavigate } from 'react-router-dom';
-import './Category.scss'
+import './Store.scss'
 
 type Props = {
   data: Iemeshi.ShopData[];
@@ -14,7 +14,6 @@ const Content = (props: Props) => {
 
   React.useEffect(() => {
 
-    let categories: string[] = []
     let stores: string[] = []
 
     for (let i = 0; i < props.data.length; i++) {
@@ -30,10 +29,10 @@ const Content = (props: Props) => {
   return (
     <>
       <div className="head"></div>
-      <div className="category">
+      <div className="store">
         <div className="container">
-          <div className="category-item">
-            <label htmlFor="category-select">店舗</label>
+          <div className="store-item">
+            <label htmlFor="store-select">店舗</label>
             <Select
               onChange={(e) => {
                 if (e) {
@@ -41,10 +40,10 @@ const Content = (props: Props) => {
                 }
               }}
               options={
-                categoryList.map(category => {
+                storeList.map(store => {
                   return {
-                    value: category,
-                    label: category
+                    value: store,
+                    label: store
                   }
                 })
               }
