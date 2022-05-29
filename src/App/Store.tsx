@@ -10,8 +10,6 @@ type Props = {
 const Content = (props: Props) => {
 
   const navigate = useNavigate();
-
-  const [categoryList, setCategoryList] = React.useState<string[]>([]);
   const [storeList, setStoreList] = React.useState<string[]>([]);
 
   React.useEffect(() => {
@@ -22,10 +20,6 @@ const Content = (props: Props) => {
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
 
-      if (categories.indexOf(shop['カテゴリ']) === -1) {
-
-        categories.push(shop['カテゴリ'])
-      }
       if (stores.indexOf(shop['スポット名']) === -1) {
 
         stores.push(shop['スポット名'])
@@ -33,7 +27,6 @@ const Content = (props: Props) => {
 
     }
 
-    setCategoryList(categories)
     setStoreList(stores)
 
   }, [props.data])
@@ -45,11 +38,11 @@ const Content = (props: Props) => {
       <div className="category">
         <div className="container">
           <div className="category-item">
-            <label htmlFor="category-select">O/O or FSM</label>
+            <label htmlFor="category-select">店舗</label>
             <Select
               onChange={(e) => {
                 if (e) {
-                  navigate(`/list?category=${e.value}`);
+                  navigate(`/list?store=${e.value}`);
                 }
               }}
               options={
@@ -61,25 +54,7 @@ const Content = (props: Props) => {
                 })
               }
             />
-            <div></div>
-            <label htmlFor="store-select">店舗</label>
-            <Select
-              onChange={(e) => {
-                if (e) {
-                  navigate(`/list?store=${e.value}`);
-                }
-              }}
-              options={
-                storeList.map(store => {
-                  return {
-                    value: store,
-                    label: store
-                  }
-                })
-              }
-            />
           </div>
-
         </div>
       </div>
     </>
