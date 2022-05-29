@@ -18,7 +18,7 @@ const Content = (props: Props) => {
   const [hasMore, setHasMore] = React.useState(true);
 
   const [searchParams] = useSearchParams();
-  const queryCategory = searchParams.get('category')
+  const queryCategory = searchParams.get('store')
 
   React.useEffect(() => {
 
@@ -26,7 +26,7 @@ const Content = (props: Props) => {
 
     if (queryCategory) {
       data = props.data.filter((shop) => {
-        return shop['カテゴリ'] === queryCategory
+        return shop['スポット名'] === queryCategory
       })
     }
 
