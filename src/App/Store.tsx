@@ -36,7 +36,7 @@ const Content = (props: Props) => {
             <Select
               onChange={(e) => {
                 if (e) {
-                  navigate(`/list?category =${e.value}`);
+                  navigate(`/list?store =${e.value}`);
                 }
               }}
               options={
