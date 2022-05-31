@@ -40,7 +40,7 @@ const Content = (props: Props) => {
                 }
               }}
               options={
-                prefectureList.map(store => {
+                prefectureList.map(prefecture => {
                   return {
                     value: prefecture,
                     label: prefecture
