@@ -8,6 +8,8 @@ import AboutUs from './App/AboutUs'
 import Category from './App/Category'
 import StoreList from './App/StoreList'
 import Store from './App/Store'
+import BcList from './App/BcList'
+import Bc from './App/Bc'
 import Images from './App/Images'
 
 import Tabbar from './App/Tabbar'
@@ -84,6 +86,8 @@ const App = () => {
           <Route path="/category" element={<Category data={shopList} />} />
           <Route path="/storelist" element={<StoreList data={shopList} />} />
           <Route path="/store" element={<Store data={shopList} />} />
+          <Route path="/bclist" element={<BcList data={shopList} />} />
+          <Route path="/bc" element={<Bc data={shopList} />} />
           <Route path="/images" element={<Images data={shopList} />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
