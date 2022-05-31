@@ -9,6 +9,7 @@ declare namespace Iemeshi {
     'カテゴリ': string;
     '紹介文': string;
     '担当BC': string;
+    '都道府県': string;
     '画像': string;
     'URL': string;
     'Instagram': string;
