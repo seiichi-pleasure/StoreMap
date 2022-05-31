@@ -91,7 +91,7 @@ const Content = (props: Props) => {
 
             <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
             <Link to={`/bclist?bc=${bc}`}>
-              <p className="small">BCOM：{shop['BCOM']}</p>
+             <span onClick={clickHandler} className="bc">{bc}</span>
               </link>
 
           </>
