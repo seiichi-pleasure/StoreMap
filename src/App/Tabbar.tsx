@@ -13,7 +13,7 @@ const Content = () => {
         <li><Link to="/store"><div className="icon"><FaSearch /></div><div className="text">店舗</div></Link></li>
         <li><Link to="/bc"><div className="icon"><FaSearch /></div><div className="text">BC</div></Link></li>
         <li><Link to="/prefecture"><div className="icon"><FaSearch /></div><div className="text">都道府県</div></Link></li>
-        <li><Link to="/storelist?store"><div className="icon"><FaList /></div><div className="text">一覧</div></Link></li>
+        <li><Link to="/storelist?store&店"><div className="icon"><FaList /></div><div className="text">一覧</div></Link></li>
       </ul>
     </div>
   );
