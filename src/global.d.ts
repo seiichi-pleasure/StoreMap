@@ -7,7 +7,7 @@ declare namespace Iemeshi {
     '経度': string;
     '店舗名': string;
     'O/O': string;
-    '紹介文': string;
+    'Sales': string;
     'BCOM': string;
     '都道府県': string;
     '画像': string;
