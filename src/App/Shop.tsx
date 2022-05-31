@@ -40,6 +40,7 @@ const Content = (props: Props) => {
 
   const distanceTipText = makeDistanceLabelText(shop.distance)
   const category = shop['カテゴリ']
+  const bc = shop['BCOM']
   const content = shop['紹介文']
 
   const toBreakLine = (text: string) => {
@@ -89,7 +90,9 @@ const Content = (props: Props) => {
             ></div>
 
             <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
-            <p className="small">BCOM：{shop['BCOM']}</p>
+            <Link to={`/bclist?bc=${bc}`}>
+              <p className="small">BCOM：{shop['BCOM']}</p>
+              </link>
 
           </>
           :
