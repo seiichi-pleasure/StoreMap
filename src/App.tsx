@@ -9,6 +9,8 @@ import Category from './App/Category'
 import StoreList from './App/StoreList'
 import Store from './App/Store'
 import BcList from './App/BcList'
+import Prefecture from './App/Prefecture'
+import PrefectureList from './App/PrefectureList'
 import Bc from './App/Bc'
 import Images from './App/Images'
 
