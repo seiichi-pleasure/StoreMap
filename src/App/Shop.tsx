@@ -67,7 +67,7 @@ const Content = (props: Props) => {
       <div className="container">
         {shop?
           <>
-            <h2>{shop['スポット名']}</h2>
+            <h2>{shop['店舗名']}</h2>
             <div>
               <Link to={`/list?category=${category}`}>
                 <span onClick={clickHandler} className="category">{category}</span>
@@ -77,7 +77,7 @@ const Content = (props: Props) => {
 
             <div style={{margin: "24px 0"}}><Links data={shop} /></div>
 
-            { shop['画像'] && <img src={shop['画像']} alt={shop['スポット名']} style={{width: "100%"}} />}
+            { shop['画像'] && <img src={shop['画像']} alt={shop['店舗名']} style={{width: "100%"}} />}
 
             <p style={{margin: "24px 0"}}>{toBreakLine(content)}</p>
 
