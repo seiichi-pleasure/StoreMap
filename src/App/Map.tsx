@@ -96,7 +96,7 @@ const Content = (props: Props) => {
           'text-halo-width': 2,
         },
         layout: {
-          'text-field': "{スポット名}",
+          'text-field': "{店舗名}",
           'text-font': ['Noto Sans Regular'],
           'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
           'text-radial-offset': 0.5,
