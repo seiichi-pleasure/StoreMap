@@ -39,7 +39,7 @@ const Content = (props: Props) => {
           >
             <img
               src={item['画像']}
-              alt={item['スポット名']}
+              alt={item['店舗名']}
               loading="lazy"
               onClick={() => popupHandler(item)}
               onError={e => {
