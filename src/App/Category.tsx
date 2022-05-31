@@ -20,7 +20,7 @@ const Content = (props: Props) => {
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
 
-      if (categories.indexOf(shop['カテゴリ']) === -1) categories.push(shop['カテゴリ']);
+      if (categories.indexOf(shop['O/O']) === -1) categories.push(shop['O/O']);
 
     }
 
