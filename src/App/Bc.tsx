@@ -18,7 +18,7 @@ const Content = (props: Props) => {
 
     for (let i = 0; i < props.data.length; i++) {
       const shop = props.data[i];
-      if (bcs.indexOf(shop['担当BC']) === -1) bcs.push(shop['担当BC']);
+      if (bcs.indexOf(shop['BCOM']) === -1) bcs.push(shop['BCOM']);
     }
 
     setBcList(bcs)
@@ -32,7 +32,7 @@ const Content = (props: Props) => {
       <div className="store">
         <div className="container">
           <div className="store-item">
-            <label htmlFor="store-select">BC</label>
+            <label htmlFor="store-select">BCOM</label>
             <Select
               onChange={(e) => {
                 if (e) {
