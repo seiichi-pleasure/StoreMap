@@ -41,7 +41,7 @@ const Content = (props: Props) => {
   const distanceTipText = makeDistanceLabelText(shop.distance)
   const category = shop['O/O']
   const bc = shop['BCOM']
-  const content = shop['紹介文']
+  const content = shop['Sales']
 
   const toBreakLine = (text: string) => {
 
