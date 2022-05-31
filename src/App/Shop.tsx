@@ -90,10 +90,9 @@ const Content = (props: Props) => {
             ></div>
 
             <p><a className="small" href={`http://maps.apple.com/?q=${shop['緯度']},${shop['経度']}`}>店舗までのルート</a></p>
-            <Link to={`/bclist?bc=${bc}`}>
-             <span onClick={clickHandler} className="bc">{bc}</span>
-              </link>
-
+              <Link to={`/bclist?bc=${bc}`}>
+                <span onClick={clickHandler} className="category">{bc}</span>
+              </Link>
           </>
           :
           <></>
