@@ -39,7 +39,7 @@ const Content = (props: Props) => {
   }, [shop, mapNode])
 
   const distanceTipText = makeDistanceLabelText(shop.distance)
-  const category = shop['カテゴリ']
+  const category = shop['O/O']
   const bc = shop['BCOM']
   const content = shop['紹介文']
 
