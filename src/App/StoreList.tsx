@@ -18,7 +18,7 @@ const Content = (props: Props) => {
   const [hasMore, setHasMore] = React.useState(true);
 
   const [searchParams] = useSearchParams();
-  const queryCategory = searchParams.get('category')
+  const queryCategory = searchParams.get('store')
 
   React.useEffect(() => {
 
@@ -26,7 +26,7 @@ const Content = (props: Props) => {
 
     if (queryCategory) {
       data = props.data.filter((shop) => {
-        return shop['カテゴリ'] === queryCategory
+        return shop['担当BC'] === queryCategory
       })
     }
 
@@ -76,7 +76,7 @@ const Content = (props: Props) => {
 
   return (
     <div id="shop-list" className="shop-list">
-      {queryCategory && <div className="shop-list-category">{`カテゴリ：「${queryCategory}」${data.length}件`}</div>}
+      {queryCategory && <div className="shop-list-category">{`担当BC：「${queryCategory}」${data.length}件`}</div>}
 
       <InfiniteScroll
         dataLength={list.length}
