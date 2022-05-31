@@ -8,7 +8,7 @@ declare namespace Iemeshi {
     'スポット名': string;
     'カテゴリ': string;
     '紹介文': string;
-    'BCOC': string;
+    'BCOM': string;
     '都道府県': string;
     '画像': string;
     'URL': string;
