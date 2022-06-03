@@ -2,7 +2,7 @@ import React from "react";
 
 import App from './App'
 // import About from './About'
-// import './Container.scss'
+import './Container.scss'
 
 function Content() {
   return (
