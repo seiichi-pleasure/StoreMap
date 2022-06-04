@@ -66,7 +66,7 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-      if ("{O/O}" === "鈴木誠一"){
+      if ("{店舗名}" === "千里丘店"){
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -115,7 +115,7 @@ const Content = (props: Props) => {
           'text-halo-width': 2,
         },
         layout: {
-          'text-field': "{店舗名}",
+          'text-field': "{店舗名}{O/O}",
           'text-font': ['Noto Sans Regular'],
           'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
           'text-radial-offset': 0.5,
