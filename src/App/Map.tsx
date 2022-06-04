@@ -66,7 +66,7 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-      if ("{店舗名}" === "千里丘店"){
+      if ('{店舗名}' === '千里丘店'){
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
