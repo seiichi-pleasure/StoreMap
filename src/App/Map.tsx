@@ -66,8 +66,8 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-    for (let i = 0; i < props.data.length; i++) {
-      const shop = props.data[i];
+    for (let i = 0; i < data.length; i++) {
+      const shop = data[i];
       if (shop['O/O'] === "鈴木誠一"){
       mapObject.addLayer({
         id: 'shop-points',
