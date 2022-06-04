@@ -66,7 +66,7 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-      if("{O/O}"){
+      if("{O/O}"==='鈴木誠一'){
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -76,7 +76,7 @@ const Content = (props: Props) => {
         ],
         paint: {
           'circle-radius': 13,
-          'circle-color': '#00FF00',
+          'circle-color': '#0000FF',
           'circle-opacity': 0.4,
           'circle-stroke-width': 2,
           'circle-stroke-color': '#FFFFFF',
