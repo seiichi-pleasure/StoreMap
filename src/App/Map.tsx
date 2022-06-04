@@ -66,10 +66,7 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-      {
-        (()=> {
-          if({O/O}="鈴木誠一") {
-            return (
+      if({O/O} == "鈴木誠一"){
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -86,9 +83,7 @@ const Content = (props: Props) => {
           'circle-stroke-opacity': 1,
         },
       })
-            );
-          } else {
-            return (
+      }else{
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -105,9 +100,6 @@ const Content = (props: Props) => {
           'circle-stroke-opacity': 1,
         },
       })
-            );
-          }
-        })()
       }
 
       mapObject.addLayer({
