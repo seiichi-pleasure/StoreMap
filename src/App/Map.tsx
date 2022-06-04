@@ -66,6 +66,29 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
+      {
+        (()=> {
+          if({O/O}="鈴木誠一") {
+            return (
+      mapObject.addLayer({
+        id: 'shop-points',
+        type: 'circle',
+        source: 'shops',
+        filter: ['all',
+          ['==', '$type', 'Point'],
+        ],
+        paint: {
+          'circle-radius': 13,
+          'circle-color': '#00FF00',
+          'circle-opacity': 0.4,
+          'circle-stroke-width': 2,
+          'circle-stroke-color': '#FFFFFF',
+          'circle-stroke-opacity': 1,
+        },
+      })
+            );
+          } else {
+            return (
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -82,6 +105,10 @@ const Content = (props: Props) => {
           'circle-stroke-opacity': 1,
         },
       })
+            );
+          }
+        })()
+      }
 
       mapObject.addLayer({
         id: 'shop-symbol',
