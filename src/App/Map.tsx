@@ -66,7 +66,9 @@ const Content = (props: Props) => {
         clusterRadius: 25,
       })
 
-      if("{O/O}"==='鈴木誠一'){
+    for (let i = 0; i < props.data.length; i++) {
+      const shop = props.data[i];
+      if (shop['O/O'] === "鈴木誠一"){
       mapObject.addLayer({
         id: 'shop-points',
         type: 'circle',
@@ -101,6 +103,8 @@ const Content = (props: Props) => {
         },
       })
       }
+    }
+
 
       mapObject.addLayer({
         id: 'shop-symbol',
