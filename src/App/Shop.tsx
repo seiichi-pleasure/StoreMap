@@ -83,7 +83,7 @@ const Content = (props: Props) => {
 
             <div
               ref={mapNode}
-              style={{width: '100%', height: '200px', marginTop: "24px"}}
+              style={{width: '100%', height: '100%', marginTop: "24px"}}
               data-lat={shop['緯度']}
               data-lng={shop['経度']}
               data-navigation-control="off"
